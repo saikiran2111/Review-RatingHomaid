@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+        <div class="section6" id="ratingSection">
+            <h1 class="review-heading1">Review & Rating <span><i class="fa-solid fa-heart" style="color: #e62b0a;"></i></span></h1>
+            <div class="review-container">
+              <div class="top-container">
+                <div class="reviewBox">
+                  <div class="leftboxbackground">
+                    <h1 class="review-heading">Cooking Review</h1>
+                    <div class="stars-container1" onmouseout="resetStars('.stars-container1', '#output1')">
+                      <i class="fa-solid fa-star" onclick="rateStar1(1)" onmouseover="hoverStar1(1)" class="star"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar1(2)" onmouseover="hoverStar1(2)" class="star"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar1(3)" onmouseover="hoverStar1(3)" class="star"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar1(4)" onmouseover="hoverStar1(4)" class="star"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar1(5)" onmouseover="hoverStar1(5)" class="star"></i>
+                    </div>
+                    <p class="rating-text1" id="output1">You rated it ____</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="./side-food-img.png" class="side-cook-img">
+                </div>
+              </div>
+              <div class="bottom-container">
+                <div class="image">
+                  <img src="./side-cleaning-img.png" class="side-cook-img">
+                </div>
+                <div class="reviewBox">
+                  <div class="rightboxbackground">
+                    <h1 class="review-heading">Cleaning Review</h1>
+                    <div class="stars-container2" onmouseout="resetStars('.stars-container2', '#output2')">
+                      <i class="fa-solid fa-star" onclick="rateStar2(1)" onmouseover="hoverStar2(1)"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar2(2)" onmouseover="hoverStar2(2)"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar2(3)" onmouseover="hoverStar2(3)"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar2(4)" onmouseover="hoverStar2(4)"></i>
+                      <i class="fa-solid fa-star" onclick="rateStar2(5)" onmouseover="hoverStar2(5)"></i>
+                    </div>
+                    <p class="rating-text2" id="output2">You rated it ____</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/0175ddf0d9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
